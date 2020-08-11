@@ -1,3 +1,7 @@
+# code explaination video
+youtube -https://youtu.be/n85ASu_7gLY
+
+
 # Dataset_generator
 This code can be used to generate personalized data set of faces and objects for object/face recognition purposes
 make sure that haarcascade_frontalface_default is in the same directory as the code.
@@ -99,3 +103,9 @@ Are you sure you wanna sit there and click 100 of photos of yourself? You might 
 	
 	cv2.destroyAllWindows()
 // to destroy the subsidieary python window of webcam
+
+
+
+
+
+#revised from original code by Anirban Kar: https://github.com/thecodacus/Face-Recognition    
