@@ -11,6 +11,8 @@ But what if you require a personalized data set? Like for example your photos fo
 But again the que is I have a camera or a smartphone I can click photos of myself.  But we know how much data is required to achieve a good accuracy for a model.
 Are you sure you wanna sit there and click 100 of photos of yourself? You might be an essentric at that point.so without further blabbering lets get into this code.
 
+# CODE
+
 import cv2
 //OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.
 
@@ -38,14 +40,14 @@ face_count = int(input('\n enter no of pictures, press <enter> ==>  '))
 
 print("\n Initializing face capture. Say Cheeeesseee ")
 
-# Initialize individual sampling face count
+#Initialize individual sampling face count
 count = 0
 
-# starting face detection and getting data 
+#starting face detection and getting data 
 while(True):
 
 
-#C apture frame-by-frame
+#Capture frame-by-frame
     ret, img = cam.read()
 // read(). Basically, ret is a boolean regarding whether or not there was a return at all, at the frame is each frame that is returned. .
 //cap.read() returns a bool (True/False). If frame is read correctly, it will be True
@@ -76,7 +78,7 @@ faces = face_detector.detectMultiScale(gray (image name) , 1.3( scale factor), 5
     elif count >= face_count: # stopping after pictures are collected
          break
 
-# Do a bit of cleanup
+#Do a bit of cleanup
 print("\n Exiting Program ")
 cam.release()
 // to stop tthe web cam
