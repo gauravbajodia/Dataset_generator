@@ -23,13 +23,13 @@ cam.set(3, 640) # set video width
 cam.set(4, 480) # set video height
 //using cam.set to set the height and width of input webcam 
 
-# make sure 'haarcascade_frontalface_default.xml' is in the same folder as this code
+#make sure 'haarcascade_frontalface_default.xml' is in the same folder as this code
 face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 //OpenCV's algorithm is currently using the following Haar-like features which are the input to the basic classifiers. 
 //These classifiers are all pre trained.You can download different classifiers from their website or gituhub repositories 
 //For this particular project we are using the haarcascade frontal face classifier
 
-# For each person, enter one numeric face id (must enter number start from 1, this is the lable of person 1)
+#For each person, enter one numeric face id (must enter number start from 1, this is the lable of person 1)
 face_id = input('\n enter id, press <enter> ==>  ')
 
 user = input('\n enter name, press <enter> ==>  ')
@@ -37,14 +37,15 @@ user = input('\n enter name, press <enter> ==>  ')
 face_count = int(input('\n enter no of pictures, press <enter> ==>  '))
 
 print("\n Initializing face capture. Say Cheeeesseee ")
+
 # Initialize individual sampling face count
 count = 0
 
-#starting face detection and getting data 
+# starting face detection and getting data 
 while(True):
 
 
-# Capture frame-by-frame
+#C apture frame-by-frame
     ret, img = cam.read()
 // read(). Basically, ret is a boolean regarding whether or not there was a return at all, at the frame is each frame that is returned. .
 //cap.read() returns a bool (True/False). If frame is read correctly, it will be True
